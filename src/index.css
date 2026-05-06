@@ -116,6 +116,13 @@ label {
   margin-bottom: 0.25rem;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  padding-block-start: 0;
+  margin-block-start: 0;
+}
+
 form {
   display: flex;
   gap: 0.5rem;
@@ -130,10 +137,13 @@ input[type="text"] {
 }
 
 input[type="color"] {
+  display: block;
   width: 45px;
   height: 45px;
+  padding: 0;
+  /* border-radius: 16px; */
   outline: none;
-  border: none;
+  /* border: none; */
   background: none;
   cursor: pointer;
 }
@@ -150,4 +160,22 @@ input[type="color"] {
 
 .btn:hover {
   background: var(--accent-hover);
+}
+
+.colors-container {
+  padding: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color-item {
+  flex: 1 0 20%;
+  padding: 1rem;
+}
+
+.shade {
+  color: #fff;
+}
+.tint {
+  color: #000;
 }

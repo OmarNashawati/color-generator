@@ -2,15 +2,10 @@ import React, { useState } from "react";
 import Values from "values.js";
 import ColorItem from "./ColorItem";
 
-const tempColors = [
-  { hex: "000FFF", percentage: "10" },
-  { hex: "000FFF", percentage: "10" },
-  { hex: "000FFF", percentage: "10" },
-];
 const App = () => {
   const [color, setColor] = useState("");
   const [error, setError] = useState(null);
-  const [colors, setColors] = useState(tempColors);
+  const [colors, setColors] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
